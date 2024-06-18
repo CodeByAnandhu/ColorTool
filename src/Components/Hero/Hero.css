@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 0px 40px;  
+
+}
+
+main{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 60vh;
+    border-radius: 20px;
+    box-shadow: 0px 7px 34px -9px rgba(0, 0, 0, 0.041);
+    background-color: #ffff;
+}
+
+.hero .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    height: 70%; 
+    gap: 20px;  
+}
+
+.left img{
+    width: 80%;
+    height: 95%;
+    border-radius: 35px;
+}
+
+.selectIamge{
+    padding: 12px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #D2C3F9;
+    color: #ffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.5s;
+}
+
+.selectIamge:active{
+    transform: scale(0.9);  
+}
+
+.selectIamge:hover{
+
+    background-color: #a88ef9;
+    
+}
+
+main .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 70%;
+    gap: 20px;
+}
+
+.right .colorCard{
+   
+    width: 50%;
+    height: 60%;
+    background-color: #D7C4F9;
+    border-radius: 30px;
+    box-shadow: 0px 7px 34px -9px rgba(0, 0, 0, 0.041);
+}
+
+.right p{
+    color: #3f3f3f;
+    font-size: 20px;
+    font-family: "arial", sans-serif;
+}
