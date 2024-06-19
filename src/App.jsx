@@ -9,9 +9,12 @@ function App() {
       <Navbar/>
       <Hero/>
       <Pallet/>
+      
       <Footer/>
     </div>
   )
 }
 
 export default App
+
+
