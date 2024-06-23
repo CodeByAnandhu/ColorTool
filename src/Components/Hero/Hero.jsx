@@ -57,7 +57,7 @@ function Hero() {
         </div>
         <div className="right">
           <div onClick={handleCopy} className="colorCard" style={{ backgroundColor: colorPicker }}>
-            {/* Display color preview */}
+            
           </div>
           <p onClick={handleCopy}>{colorPicker || '#d7c4f9'} </p>
         </div>

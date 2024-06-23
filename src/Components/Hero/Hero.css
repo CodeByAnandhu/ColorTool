@@ -44,7 +44,7 @@ main{
     border-radius: 35px;
 }
 
-/* Define the keyframes for the zoomInDown animation */
+
 @-webkit-keyframes zoomInDown {
     0% {
       opacity: 0;
@@ -164,7 +164,6 @@ main .right{
 
 
 .copyedMessege{
-  /* display: none; */
   text-align: center;
   padding: 10px 20px;
   color: #ffffff;
