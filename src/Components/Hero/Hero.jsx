@@ -48,7 +48,7 @@ function Hero() {
       <main>
         <div className="left">
           <img className='image'
-            src={image ? URL.createObjectURL(image) : "/public/Greek Sunset – MagicPattern Wallpaper.jpeg"}
+            src={image ? URL.createObjectURL(image) : "/heroImg.jpeg"}
             onMouseEnter={loadEyeDropper} 
           />
           <button className='selectIamge'>
