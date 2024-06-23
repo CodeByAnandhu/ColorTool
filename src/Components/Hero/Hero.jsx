@@ -5,6 +5,7 @@ function Hero() {
   
   const [image, setImage] = useState(null);
   const [colorPicker, setColorPicker] = useState(null);
+  const [iscopy , setIscopy] = useState(false);
 
   function loadEyeDropper() {
     if (window.EyeDropper) {
@@ -20,6 +21,22 @@ function Hero() {
       console.error('EyeDropper is not available.');
     }
   }
+
+  function timoutClipbordMessege() {
+    setTimeout(() => {
+      setIscopy(false);
+    }, 2000);
+  }
+
+  const handleCopy = () => {
+
+    navigator.clipboard.writeText(colorPicker?colorPicker:'#d7c4f9').then(() => {
+      setIscopy(true);
+      timoutClipbordMessege();
+    }).catch((err) => {
+      console.error('Failed to copy: ', err);
+    });
+  };
  
 
   function handleImageChange(e) {
@@ -39,12 +56,14 @@ function Hero() {
           </button>
         </div>
         <div className="right">
-          <div className="colorCard" style={{ backgroundColor: colorPicker }}>
+          <div onClick={handleCopy} className="colorCard" style={{ backgroundColor: colorPicker }}>
             {/* Display color preview */}
           </div>
-          <p>{colorPicker || '#d7c4f9'} </p>
+          <p onClick={handleCopy}>{colorPicker || '#d7c4f9'} </p>
         </div>
       </main>
+
+      {iscopy?<p className="copyedMessege">Copied to clipboard</p>:<></>}
     </div>
   );
 }

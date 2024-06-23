@@ -11,10 +11,10 @@ function Navbar() {
 
             <div className="right">
               <ul>
-                <li>Home</li>
+                <li className="active">Home</li>
                 <li>About</li>
                 <li>Community</li>
-                <li>Pricing</li>
+                <li>Colors</li>
               </ul>
             </div>
 

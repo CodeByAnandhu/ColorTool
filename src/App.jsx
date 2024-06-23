@@ -9,7 +9,6 @@ function App() {
       <Navbar/>
       <Hero/>
       <Pallet/>
-      
       <Footer/>
     </div>
   )

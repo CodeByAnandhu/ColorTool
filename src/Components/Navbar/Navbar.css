@@ -71,3 +71,10 @@
 
   }
 
+.active{
+
+    text-decoration: underline;
+    text-decoration-color:#bd97ff;
+    text-underline-offset: 6px;
+      
+}
