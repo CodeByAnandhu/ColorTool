@@ -49,7 +49,7 @@ function Hero() {
         <div className="left">
           <img className='image'
             src={image ? URL.createObjectURL(image) : "/heroImg.jpeg"}
-            onMouseEnter={loadEyeDropper} 
+            onMouseMove={loadEyeDropper}
           />
           <button className='selectIamge'>
             <input type="file" onChange={handleImageChange} />Select image
